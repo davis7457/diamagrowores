@@ -125,6 +125,6 @@ public class Main
 	
 	
 	
-	@SidedProxy(clientSide="com.D1g1Byt3.diamamod.ClientProxy", serverSide="com.D1g1Byt3.diamamod.ServerProxy")
+	@SidedProxy(clientSide="com.D1g1Byt3.diamamod.core.ClientProxy", serverSide="com.D1g1Byt3.diamamod.core.ServerProxy")
 	public static CommonProxy proxy;
 }

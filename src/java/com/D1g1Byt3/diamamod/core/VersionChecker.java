@@ -16,7 +16,7 @@ public class VersionChecker implements Runnable {
 		InputStream in = null;
 	    try
 	    {
-	      in = new URL("https://raw.githubusercontent.com/Davis7457/VersionCheckerDavis7457/master/gon.txt").openStream();
+	      in = new URL("https://rawgit.com/davis7457/ModVersionChecker/master/VersionDM.txt").openStream();
 	    }
 	    catch (MalformedURLException e)
 	    {
