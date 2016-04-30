@@ -28,7 +28,13 @@ public class Main
 	public static int growTexture; 
 	public static boolean doCropsGenerate;
 	public static VersionChecker versionchecker;
-	
+	public static final String VERSION_CHECK_INIT = "Starting version check.";
+	public static final String VERSION_CHECK_FAIL = "Version check failed.";
+	public static final String CURRENT_MESSAGE = "The version 1.0.0 is the current version.";
+	public static final String OUTDATED_MESSAGE = "The version 1.0.0 is outdated. Current version: " + Main.LATEST_VERSION;
+	public static final String VERSION_CHECK_FAIL_CONNECT = "Failed to connect to version check URL. Trying again...";
+	public static final String VERSION_CHECK_FAIL_CONNECT_FINAL = "Version check stopped after too many unsuccessful attempts.";
+	public static boolean haveWarnedVersionOutOfDate = false;
 	
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
@@ -37,7 +43,7 @@ public class Main
 	public static Main instance = new Main();
 	
 	
-	public void initConfiguration(FMLInitializationEvent event)
+	public void initConfiguration(FMLInitializationEvent e)
 	  {
 	    Configuration config = new Configuration(new File("config/DiamaMod.cfg"));
 	    

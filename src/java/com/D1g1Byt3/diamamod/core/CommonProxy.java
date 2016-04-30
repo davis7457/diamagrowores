@@ -14,6 +14,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class CommonProxy {
+	
 	public void preInit(FMLPreInitializationEvent e)
 	{
 		//Configuration config = new Configuration(e.getSuggestedConfigurationFile())

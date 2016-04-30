@@ -7,7 +7,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
+//import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
@@ -18,9 +18,9 @@ import net.minecraftforge.common.util.ForgeDirection;
 public class ItemOreSeeds  extends ItemSeeds{
 
 	private Block plant;
-	private Block soilBlockID;
-	private static String[] Seeds = new String[] {"Iron","Gold","Diamond","Lapiz","Emerald","Copper","Tin"};
-	private static String[] SeedI = new String[] {"Iron","Gold","Diamond","Lapiz","Emerald","Copper","Tin"};
+	public Block soilBlockID;
+	private static String[] Seeds = new String[] {"Iron","Gold","Diamond","Lapiz","Emerald","Copper","Tin","Ore"};
+	public static String[] SeedI = new String[] {"Iron","Gold","Diamond","Lapiz","Emerald","Copper","Tin","Ore"};
 
 	public ItemOreSeeds(Block plant, Block soil) {
 		super(plant, soil);

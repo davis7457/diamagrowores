@@ -8,13 +8,16 @@ import com.D1g1Byt3.diamamod.creativetabs.DMCreativeTabs;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.EnumPlantType;
 
 public class CoreCropBlock extends BlockCrops{
 	
@@ -120,6 +123,32 @@ public class CoreCropBlock extends BlockCrops{
         }
 
         return ret;
+    }
+    
+    public boolean isOpaqueCube()
+    {
+      return false;
+    }
+    
+    public boolean renderAsNormalBlock()
+    {
+      return false;
+    }
+    
+    public int getRenderType()
+    {
+      return 1;
+    }
+    
+    public EnumPlantType getPlantType(IBlockAccess world, int x, int y, int z)
+    {
+      return EnumPlantType.Crop;
+    }
+    
+    
+    public int getPlantMetadata(IBlockAccess world, int x, int y, int z)
+    {
+      return world.getBlockMetadata(x, y, z);
     }
 
 }

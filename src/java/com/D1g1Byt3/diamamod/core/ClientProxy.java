@@ -6,6 +6,16 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public class ClientProxy extends CommonProxy {
 
+	public static void version()
+	  {
+	    Main.versionchecker = new VersionChecker();
+	    Thread versionCheckThread = new Thread(Main.versionchecker, "Version Check");
+	    versionCheckThread.start();
+	  }
+	  
+	  public static void setCustomRenderers() {}
+	
+	
 	@Override
 	public void preInit(FMLPreInitializationEvent e) {
 		super.preInit(e);
