@@ -1,0 +1,25 @@
+tile.Log.Coconut.name=Coconut Log
+tile.Log.Maple.name=Maple Log
+tile.Log.Cherry.name=Cherry Log
+tile.Log.Plum.name=Plum Log
+tile.Log.Apricot.name=Apricot Log
+tile.Leaf.Coconut.name=Coconut Leaf
+tile.Leaf.Maple.name=Maple Leaf
+tile.Leaf.Cherry.name=Cherry Leaf
+tile.Leaf.Plum.name=Plum Leaf
+tile.Leaf.Apricot.name=Apricot Leaf
+tile.Sapling.CoconutSapling.name=Coconut Sapling
+tile.Sapling.MapleSapling.name=Maple Sapling
+tile.Sapling.CherrySapling.name=Cherry Sapling
+tile.Sapling.PlumSapling.name=Plum Sapling
+tile.Sapling.ApricotSapling.name=Apricot Sapling
+tile.fluidCW.name=Coconut Water
+
+
+itemGroup.BlockTab=D1g1's Blocks
+itemGroup.ItemTab=D1g1's Items
+itemGroup.ToolTab=D1g1's Tools
+itemGroup.DecoTab=D1g1's Decos
+itemGroup.MiscTab=D1g1's Miscs
+
+item.pineapple.name=Pineapple
