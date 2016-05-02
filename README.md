@@ -1,5 +1,6 @@
-# diamamod
+# Diama Grow Ores
 
-This is my first mod. Eventually it's going to incorporate Many different types of mods all into one.
-Nothing super special yet, so Far have my own version of Growable ores (Not fully functional yet).
-Will provide more details as the mod gets updated
+This is my first mod. Currently trying a "Module" base mod system, to see how things work. This is the "Grow Ores" Module.
+
+My version of Grow Ores, that is different. Not an Exact rewrite. This was Inspired by B0bGary's  Mod "B0bGary's Growable Ores!"
+I used a simular Concept with a Different aproach, but credit to the Original Creator.
